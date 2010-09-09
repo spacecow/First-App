@@ -8,5 +8,10 @@ group :test, :development do
 end
 
 group :test do
-  gem "autotest"
+#  gem "capybara", ">= 0.3.9"
+  gem "webrat", "0.7.1"
+  gem "autotest", ">= 4.3.2"
+  gem "autotest-rails", ">= 4.1.0"
+  gem "spork", ">= 0.8.4"
+#  gem "redgreen", ">= 1.2.2"
 end
