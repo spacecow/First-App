@@ -1,6 +1,8 @@
 FirstApp::Application.routes.draw do
-  resources :microposts
+  get "pages/home"
+  get "pages/contact"
 
+  resources :microposts
   resources :users
   root :to => "users#index"
 end
