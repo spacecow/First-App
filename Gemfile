@@ -3,12 +3,14 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.0'
 gem 'mysql'
 gem 'gravatar_image_tag', '>= 0.1.0'
-gem 'annotate-models', '>= 1.0.4'
 gem 'less', '>= 1.2.21'
 gem 'heroku', '>= 1.10.2'
+gem "will_paginate", '3.0.pre'
 
 group :test, :development do
   gem 'rspec-rails', '>= 2.0.0.beta.20'
+  gem 'annotate-models', '>= 1.0.4'
+  gem 'faker', '>= 0.3.1'
 end
 
 group :test do
