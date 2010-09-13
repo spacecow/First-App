@@ -69,8 +69,17 @@ table.profile {
   width: 100%;
   margin-bottom: 0;
 }
-table.profile tr td.main {
+table.profile img.gravatar {
+  border: 1px solid #999999;
+  margin-bottom: -15px;
+}
+td.main {
   width: 70%;
   padding: 1em;
 }
-table.profile tr td.sidebar { width: 30%; }
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffffcc;
+}
