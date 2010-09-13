@@ -72,6 +72,10 @@ describe User do
         should_not be_valid
     end
 
+    it "should require a password confirmation" do
+      User.new(@attr.merge(:password_confirmation => nil)).should_not be_valid
+    end
+
     it "should reject short passwords" do
       short = "a" * 5
       hash = @attr.merge(:password => short, :password_confirmation => short)
