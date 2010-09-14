@@ -1,0 +1,5 @@
+Arrange for the Gravatar link to open in a new window.
+Signed in users have no reason to access the new and create actions
+Check that the delete links appears for admins but not for normal
+users
+Prevent admins from deleting themselves
