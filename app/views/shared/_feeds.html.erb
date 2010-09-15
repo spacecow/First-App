@@ -1,0 +1,5 @@
+<% unless @feeds.empty? %>
+  <table class="microposts" summary="User microposts" %>
+    <%= render :partial => 'shared/feed', :collection => @feeds %>
+  </table>
+<% end %>
