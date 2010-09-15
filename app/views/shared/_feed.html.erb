@@ -6,7 +6,7 @@
     <span class="user">
       <%= link_to feed.user.name, feed.user %>
     </span>
-    <span class="content"><%= feed.content %></span>
+    <span class="content"><%= wrap feed.content %></span>
     <span class="timestamp">
       Posted <%= time_ago_in_words(feed.created_at) %> ago.
     </span>
