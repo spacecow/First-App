@@ -191,4 +191,28 @@ describe User do
       end
     end
   end
+
+
+  describe "relationships" do
+    before(:each) do
+      @user = User.create!(@attr)
+      @followed = Factory(:user)
+    end
+
+    it "should follow another user" do
+      @user.follow!(@followed)
+      @user.should be_following(@followed)
+    end
+
+    it "should unfollow a user" do
+      @user.follow! @followed
+      @user.unfollow! @followed
+      @user.should_not be_following @followed 
+    end
+
+    it "should include the follower in the followers array" do
+      @user.follow! @followed
+      @followed.followers.include?(@user).should be_true
+    end
+  end
 end
